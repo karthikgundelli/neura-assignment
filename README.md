@@ -1,16 +1,76 @@
-# React + Vite
+# 📝 Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, responsive **Task Management Dashboard** built using **React.js**, **Redux Toolkit**, and **Tailwind CSS**.  
+This project demonstrates core frontend skills such as state management, CRUD operations, UI responsiveness, and clean code practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ✅ View list of tasks
+- ➕ Add a new task (title required)
+- ✏️ Edit existing task title
+- ❌ Delete a task
+- 🔁 Mark task as **Pending / Completed**
+- 🔍 Search tasks by title
+- 🎯 Filter tasks by **All / Pending / Completed**
+- 🌙 Light / Dark theme toggle
+- 📱 Fully mobile-responsive UI
+- 💾 Mock API using `localStorage` (no backend required)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js (Vite)
+- **State Management:** Redux Toolkit
+- **Styling:** Tailwind CSS
+- **Mock API:** Browser `localStorage`
+- **Language:** JavaScript (ES6+)
+
+---
+
+## 📂 Project Structure
+
+src/
+├─ app/
+│ └─ store.js
+├─ features/
+│ └─ tasks/
+│ └─ taskSlice.js
+├─ components/
+│ ├─ AddTask.jsx
+│ ├─ TaskItem.jsx
+│ ├─ TaskList.jsx
+│ ├─ Filters.jsx
+│ └─ ThemeToggle.jsx
+├─ api/
+│ └─ taskApi.js
+├─ App.jsx
+├─ main.jsx
+└─ index.css
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Setup & Run Locally
+
+### 1️⃣ Clone the repository
+```bash
+git clone <your-github-repo-url>
+cd client
+2️⃣ Install dependencies
+bash
+Copy code
+npm install
+3️⃣ Start the development server
+bash
+Copy code
+npm run dev
+The app will run on:
+
+arduino
+Copy code
+http://localhost:5173
